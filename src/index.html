@@ -7,8 +7,13 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="content-to-render"></div>
   <script>
-    fetch('http://localhost:9999/.netlify/functions/fetch-elvanto-services')
+    const run = async () => {
+      const { default: renderContent } = await import('https://kfo-sunday-service.netlify.app/main.js')
+      renderContent(document.querySelector('.content-to-render'))
+    }
+    run()
   </script>
 </body>
 </html>

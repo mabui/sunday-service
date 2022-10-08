@@ -1,3 +1,7 @@
-export default () => {
-  console.log('Hello World')
+
+/**
+ * @param {HTMLDivElement} divContainer a div container where the content is rendered in
+ */
+export default (divContainer) => {
+  divContainer.innerHTML = 'Hello World'
 }
