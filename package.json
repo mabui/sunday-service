@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "debug": "netlify dev --inspect",
+    "backend": "netlify functions:serve",
+    "frontend": "serve src"
+  },
+  "devDependencies": {
+    "netlify-cli": "^10.5.1",
+    "serve": "^14.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
