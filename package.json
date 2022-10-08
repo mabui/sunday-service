@@ -1,8 +1,7 @@
 {
   "scripts": {
     "debug": "netlify dev --inspect",
-    "backend": "netlify functions:serve",
-    "frontend": "serve src"
+    "dev": "netlify dev"
   },
   "devDependencies": {
     "netlify-cli": "^10.5.1",
