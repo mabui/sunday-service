@@ -11,7 +11,7 @@
   <script>
     const run = async () => {
       const { default: renderContent } = await import('https://kfo-sunday-service.netlify.app/main.js')
-      renderContent(document.querySelector('.content-to-render'))
+      renderContent(document.querySelector('.content-to-render'), {'example-service-id-8abd-9a97580a8cd6': 'Forum FCBG'})
     }
     run()
   </script>
