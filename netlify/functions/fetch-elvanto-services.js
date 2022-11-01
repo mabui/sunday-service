@@ -24,7 +24,11 @@ const handler = async (event) => {
     start: formatToday,
     page_size: 10,
     status: 'publish',
-    service_types: ['1a82f168-be13-4eac-b6b3-ecf87e647123'],
+    service_types: [
+      '1a82f168-be13-4eac-b6b3-ecf87e647123', // Zentralkirchen-Gottesdienst
+      '9a6e81fe-4a96-4b46-b86d-912a01931327', // Lokalkirche UNITED
+      'dea808d1-7f61-4a1b-95f4-0477d1fc5966' // Schwalbe Arena-Gottesdienst
+    ],
     fields: ['series_name', 'service_times', 'picture']
   }
   const auth = {
