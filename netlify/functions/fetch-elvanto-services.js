@@ -22,9 +22,9 @@ const handler = async (event) => {
 
   const params = {
     start: formatToday,
-    page_size: 10,
+    page_size: 1,
     status: 'publish',
-    service_types: ['1a82f168-be13-4eac-b6b3-ecf87e647123'],
+    service_types: ['1a82f168-be13-4eac-b6b3-ecf87e647123', '9a6e81fe-4a96-4b46-b86d-912a01931327'],
     fields: ['series_name', 'service_times', 'picture']
   }
   const auth = {
