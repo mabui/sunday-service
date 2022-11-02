@@ -27,7 +27,15 @@ const handler = async (event) => {
     service_types: [
       '1a82f168-be13-4eac-b6b3-ecf87e647123', // Zentralkirchen-Gottesdienst
       '9a6e81fe-4a96-4b46-b86d-912a01931327', // Lokalkirche UNITED
-      'dea808d1-7f61-4a1b-95f4-0477d1fc5966' // Schwalbe Arena-Gottesdienst
+      'dea808d1-7f61-4a1b-95f4-0477d1fc5966', // Schwalbe Arena-Gottesdienst
+      '529243e4-0795-478e-9535-79a3f8107d5b', // LK-Gottesdienst Marienheide
+      'a3b84ea2-7f95-4fe4-857d-2526121fdd7b', // LK-Gottesdienst Bergneustadt
+      'd213e1a5-2a68-49a4-ba6e-9ef7f2434cae', // LK-Gottesdienst Bernberg
+      '07e6f587-2156-4e39-913f-0dff8045b622', // LK-Gottesdienst Wiehl
+      '0868c60d-aaaf-4a0d-8648-84d9c1ee71bb', // LK-Gottesdienst Oberberg West
+      'c5ee2e2a-ae43-4f1a-8a00-7f36794a2030', // LK-Gottesdienst Windhagen
+      'b3c4348f-ecb1-4fc5-8ef2-0b826db110ca' // LK-Gottesdienst Lohmar
+
     ],
     fields: ['series_name', 'service_times', 'picture']
   }
