@@ -11,7 +11,7 @@ export default async (divContainer, locationOverride = {'example-service-id-8abd
   } = await getDataFromService(locationOverride)
 
   if (!time) return `${title}`
-  if (title === 'Lokalkirchen-Standorte') return divContainer.innerHTML = `<a href="https://www.kirchefueroberberg.de/lokalkirchen">${title}</a> | ${date}`
+  if (title === 'Lokalkirchen-Standorte') return divContainer.innerHTML = `<a href="https://www.kirchefueroberberg.de/lokalkirchen" class="text-black">${title}</a> | ${date}`
   
   divContainer.innerHTML = `${title} | ${location} | ${date} | ${time}`
 }
