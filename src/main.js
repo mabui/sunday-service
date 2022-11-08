@@ -11,7 +11,7 @@ export default async (divContainer, locationOverride = {'example-service-id-8abd
   } = await getDataFromService(locationOverride)
 
   if (!time) return `${title}`
-  if (title === 'Lokalkirchen-Standorte') return divContainer.innerHTML = `<a href="https://www.kirchefueroberberg.de/lokalkirchen" class="text-black">${title}</a> | ${date}`
+  if (title === 'Lokalkirchen-Standorte') return divContainer.innerHTML = `<a href="https://www.kirchefueroberberg.de/lokalkirchen#standorten" class="text-black">${title}</a> | ${date}`
   
   divContainer.innerHTML = `${title} | ${location} | ${date} | ${time}`
 }
@@ -29,7 +29,7 @@ const getDataFromService = async (locationOverride) => {
   const results = await fetchUpcomingServices()
   if (!results.length) return { title: 'Kein Gottesdienst geplant' }
 
-  const service = isUpcomingLocalService(results[1])
+  const service = isUpcomingLocalService(results[0])
 
   const localeDateArgs = ['de-DE', {dateStyle: "short"}]
   const localeTimeArgs = ['de-DE', {timeStyle: "short"}]
