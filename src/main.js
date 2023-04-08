@@ -37,7 +37,7 @@ const getDataFromService = async (locationOverride) => {
   const title = service.series_name || service.name
   const location = locationOverride[service.id] || 'H32'
   const date = parseElvantoDate(service.date).toLocaleDateString(...localeDateArgs)
-  const times = service.service_times?.service_time?.map(({starts}) => parseElvantoDate(starts).toLocaleTimeString(...localeTimeArgs))
+  const times = service.service_times?.service_time?.reverse()?.map(({starts}) => parseElvantoDate(starts).toLocaleTimeString(...localeTimeArgs))
   const time = times && times.length && times.join(' & ') || parseElvantoDate(service.date).toLocaleTimeString(...localeTimeArgs)
   return {
     title,
