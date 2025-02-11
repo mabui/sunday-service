@@ -27,6 +27,7 @@ const handler = async (event) => {
     service_types: [
       '1a82f168-be13-4eac-b6b3-ecf87e647123', // Zentralkirchen-Gottesdienst
       '9a6e81fe-4a96-4b46-b86d-912a01931327', // Lokalkirche UNITED
+      '8efcb423-57ce-4c0b-bac0-38f89719cfcd', // Livestream-Gottesdienst
       'dea808d1-7f61-4a1b-95f4-0477d1fc5966', // Schwalbe Arena-Gottesdienst
       '529243e4-0795-478e-9535-79a3f8107d5b', // LK-Gottesdienst Marienheide
       'a3b84ea2-7f95-4fe4-857d-2526121fdd7b', // LK-Gottesdienst Bergneustadt
